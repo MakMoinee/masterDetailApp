@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/lblTrackName"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:text="Track Name: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtTrackName"
+            android:textColor="@android:color/black"
+            android:text="Sample Name"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:layout_alignBaseline="@+id/lblTrackName"
+            android:layout_toRightOf="@+id/lblTrackName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/lblGenre"
+            android:text="Genre:"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/lblTrackName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="15sp"
+            android:id="@+id/txtGenre"
+            android:layout_alignBaseline="@+id/lblGenre"
+            android:textColor="@android:color/black"
+            android:text="Sample Genre"
+            android:layout_alignStart="@+id/txtTrackName"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/lblGenre"
+            android:layout_below="@+id/lblTrackName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:id="@+id/imgAlbum"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_error"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <TextView
+
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:layout_marginRight="70dp"
+            android:id="@+id/lblPrice"
+            android:textStyle="bold"
+            android:layout_below="@+id/lblGenre"
+            android:textColor="@android:color/black"
+            android:text="Price:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_alignStart="@+id/txtGenre"
+            android:textSize="15sp"
+            android:layout_alignBaseline="@+id/lblPrice"
+            android:layout_toRightOf="@+id/lblPrice"
+            android:id="@+id/txtPrice"
+            android:textColor="@android:color/black"
+            android:text="0.00"
+            android:layout_below="@+id/lblGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
